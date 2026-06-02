@@ -8,7 +8,8 @@ import dashscope
 from dashscope import ImageSynthesis
 
 # =====================填入你的通义万相API密钥=====================
-DASHSCOPE_KEY = "sk-5b36cd78478c43c491e3001effe37487"
+import os
+DASHSCOPE_KEY = os.environ["DASHSCOPE_KEY"]
 dashscope.api_key = DASHSCOPE_KEY
 
 # 页面配置
